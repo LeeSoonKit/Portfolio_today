@@ -1,10 +1,10 @@
 :root {
-  --navy: #12263f;
-  --blue: #1f5fbf;
-  --blue-dark: #174a96;
-  --slate: #5b6676;
-  --mist: #eef1f5;
-  --line: #d5dbe3;
+  --ink: #2b0a10;
+  --red: #c8102e;
+  --red-dark: #8e0b22;
+  --muted: #6e5258;
+  --tint: #fbf1f2;
+  --line: #ebd3d6;
   --white: #ffffff;
   --serif: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --sans: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -17,12 +17,12 @@ body {
   font-family: var(--sans);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--navy);
+  color: var(--ink);
   background: var(--white);
 }
-a { color: var(--blue); }
+a { color: var(--red); }
 a:focus-visible, .btn:focus-visible {
-  outline: 3px solid var(--blue);
+  outline: 3px solid var(--red);
   outline-offset: 3px;
 }
 h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 0; }
@@ -35,10 +35,10 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; lett
   background: var(--white);
   border-bottom: 1px solid var(--line);
 }
-.logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--navy); text-decoration: none; }
+.logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); text-decoration: none; }
 .site-header nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; }
-.site-header nav a { color: var(--slate); text-decoration: none; font-weight: 500; }
-.site-header nav a:hover { color: var(--blue); }
+.site-header nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
+.site-header nav a:hover { color: var(--red); }
 
 /* Hero */
 .hero {
@@ -51,49 +51,49 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; lett
   margin: 0 auto;
 }
 .hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.25rem); letter-spacing: -0.02em; }
-.lead { font-size: 1.125rem; color: var(--slate); max-width: 34rem; margin: 1.5rem 0 2rem; }
+.lead { font-size: 1.125rem; color: var(--muted); max-width: 34rem; margin: 1.5rem 0 2rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .btn {
   display: inline-block; padding: 0.75rem 1.5rem;
-  border: 1.5px solid var(--navy); border-radius: 4px;
-  color: var(--navy); font-weight: 600; text-decoration: none;
+  border: 1.5px solid var(--ink); border-radius: 4px;
+  color: var(--ink); font-weight: 600; text-decoration: none;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.btn:hover { background: var(--navy); color: var(--white); }
-.btn.primary { background: var(--blue); border-color: var(--blue); color: var(--white); }
-.btn.primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.btn:hover { background: var(--ink); color: var(--white); }
+.btn.primary { background: var(--red); border-color: var(--red); color: var(--white); }
+.btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
 
 .site-header nav .nav-cta {
-  background: var(--blue); color: var(--white); padding: 0.45rem 1rem; border-radius: 4px; font-weight: 500;
+  background: var(--red); color: var(--white); padding: 0.45rem 1rem; border-radius: 4px; font-weight: 500;
 }
-.site-header nav .nav-cta:hover { background: var(--blue-dark); color: var(--white); }
+.site-header nav .nav-cta:hover { background: var(--red-dark); color: var(--white); }
 .hero-link { margin: 1.25rem 0 0; font-weight: 500; }
 
 /* Chart (the one memorable element) */
-.chart { margin: 0; padding: 1.25rem 1.25rem 1rem; background: var(--mist); border: 1px solid var(--line); border-radius: 6px; }
+.chart { margin: 0; padding: 1.25rem 1.25rem 1rem; background: var(--tint); border: 1px solid var(--line); border-radius: 6px; }
 .chart svg { width: 100%; height: auto; display: block; }
 .chart .grid line { stroke: var(--line); stroke-width: 1; }
-.chart .axis-text text { fill: var(--slate); font: 400 12px var(--sans); }
-.chart .line { fill: none; stroke: var(--blue); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round;
+.chart .axis-text text { fill: var(--muted); font: 400 12px var(--sans); }
+.chart .line { fill: none; stroke: var(--red); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round;
   stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw 1.8s ease-out 0.3s forwards; }
-.chart .area { fill: var(--blue); opacity: 0.1; }
-.chart .benchmark { fill: none; stroke: var(--slate); stroke-width: 2; stroke-dasharray: 5 5; }
-.chart .dot { fill: var(--white); stroke: var(--blue); stroke-width: 3; }
-.chart figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem 0.6rem; margin-top: 0.75rem; font-size: 0.875rem; color: var(--slate); }
-.chart .key { width: 18px; height: 3px; background: var(--blue); }
-.chart .key-bench { background: var(--slate); margin-left: 0.6rem; }
+.chart .area { fill: var(--red); opacity: 0.1; }
+.chart .benchmark { fill: none; stroke: var(--muted); stroke-width: 2; stroke-dasharray: 5 5; }
+.chart .dot { fill: var(--white); stroke: var(--red); stroke-width: 3; }
+.chart figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem 0.6rem; margin-top: 0.75rem; font-size: 0.875rem; color: var(--muted); }
+.chart .key { width: 18px; height: 3px; background: var(--red); }
+.chart .key-bench { background: var(--muted); margin-left: 0.6rem; }
 .chart .note { margin-left: auto; font-style: italic; }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 
 /* Key figures */
-.figures { background: var(--navy); color: var(--white); }
+.figures { background: var(--red-dark); color: var(--white); }
 .figures dl {
   display: grid; grid-template-columns: repeat(4, 1fr);
   max-width: 76rem; margin: 0 auto;
   padding: 2.25rem clamp(1.25rem, 5vw, 4rem); gap: 1.5rem;
 }
-.figures div { border-left: 2px solid var(--blue); padding-left: 1rem; }
-.figures dt { color: #b7c3d4; font-size: 0.9rem; }
+.figures div { border-left: 2px solid #f3c9cf; padding-left: 1rem; }
+.figures dt { color: #f3c9cf; font-size: 0.9rem; }
 .figures dd { margin: 0.2rem 0 0; font-size: 1.9rem; font-weight: 700; }
 
 /* Sections */
@@ -106,31 +106,31 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; lett
 /* Experience ledger */
 .ledger table { width: 100%; border-collapse: collapse; }
 .ledger th, .ledger td { text-align: left; padding: 0.9rem 0.75rem; border-bottom: 1px solid var(--line); }
-.ledger thead th { color: var(--slate); font-weight: 500; font-size: 0.9rem; border-bottom: 2px solid var(--navy); }
-.ledger tbody tr:nth-child(even) { background: var(--mist); }
+.ledger thead th { color: var(--muted); font-weight: 500; font-size: 0.9rem; border-bottom: 2px solid var(--ink); }
+.ledger tbody tr:nth-child(even) { background: var(--tint); }
 .ledger td:first-child { font-weight: 500; }
 .ledger td:last-child, .ledger th:last-child { text-align: right; white-space: nowrap; }
-.skills { margin: 1.5rem 0 0; color: var(--slate); }
+.skills { margin: 1.5rem 0 0; color: var(--muted); }
 
 /* Projects */
-.projects { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 2px solid var(--navy); }
+.projects { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 2px solid var(--ink); }
 .projects li {
   display: grid; grid-template-columns: minmax(0, 1fr) 12rem; gap: 2rem; align-items: center;
   padding: 1.5rem 0; border-bottom: 1px solid var(--line);
 }
 .projects h3 { font-size: 1.2rem; margin-bottom: 0.35rem; }
-.projects li p { margin: 0; color: var(--slate); max-width: 38rem; }
+.projects li p { margin: 0; color: var(--muted); max-width: 38rem; }
 .projects .result { text-align: right; font-size: 0.9rem; }
-.projects .result strong { display: block; font-size: 1.6rem; font-weight: 700; color: var(--blue); line-height: 1.1; }
+.projects .result strong { display: block; font-size: 1.6rem; font-weight: 700; color: var(--red); line-height: 1.1; }
 
 /* Contact */
 .contact { border-bottom: 0; }
-.contact p { max-width: 36rem; margin: 1rem 0 0; color: var(--slate); }
+.contact p { max-width: 36rem; margin: 1rem 0 0; color: var(--muted); }
 .mail { font-size: clamp(1.35rem, 3.4vw, 2rem); font-weight: 500; }
 .links a { display: inline-block; margin: 0 1.25rem 0.4rem 0; font-weight: 500; }
 
 /* Footer */
-.site-footer { background: var(--mist); border-top: 1px solid var(--line); padding: 1.5rem clamp(1.25rem, 5vw, 4rem); color: var(--slate); font-size: 0.9rem; }
+.site-footer { background: var(--tint); border-top: 1px solid var(--line); padding: 1.5rem clamp(1.25rem, 5vw, 4rem); color: var(--muted); font-size: 0.9rem; }
 .site-footer p { margin: 0; max-width: 76rem; margin-inline: auto; }
 
 /* Responsive */
