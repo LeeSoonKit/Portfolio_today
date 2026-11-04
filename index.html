@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Financial Analyst</title>
+  <meta name="description" content="Portfolio of Your Name, a financial analyst focused on valuation, forecasting and risk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top">Your Name</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>I turn financial data into decisions you can defend.</h1>
+      <p class="lead">I'm a financial analyst specialising in valuation, forecasting and risk modelling for growth-stage companies.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <figure class="chart" aria-label="Illustrative line chart showing steady portfolio growth">
+      <svg viewBox="0 0 480 300" role="img">
+        <g class="grid">
+          <line x1="40" y1="40" x2="460" y2="40"/>
+          <line x1="40" y1="110" x2="460" y2="110"/>
+          <line x1="40" y1="180" x2="460" y2="180"/>
+          <line x1="40" y1="250" x2="460" y2="250"/>
+        </g>
+        <g class="axis-text">
+          <text x="34" y="44" text-anchor="end">150</text>
+          <text x="34" y="114" text-anchor="end">125</text>
+          <text x="34" y="184" text-anchor="end">100</text>
+          <text x="34" y="254" text-anchor="end">75</text>
+          <text x="40" y="276">Q1</text>
+          <text x="145" y="276">Q2</text>
+          <text x="250" y="276">Q3</text>
+          <text x="355" y="276">Q4</text>
+          <text x="460" y="276" text-anchor="end">Q5</text>
+        </g>
+        <path class="benchmark" d="M40 190 L100 184 L160 192 L220 178 L280 182 L340 170 L400 174 L460 166"/>
+        <path class="area" d="M40 200 L100 188 L160 170 L220 150 L280 128 L340 112 L400 78 L460 56 L460 250 L40 250 Z"/>
+        <path class="line" d="M40 200 L100 188 L160 170 L220 150 L280 128 L340 112 L400 78 L460 56"/>
+        <circle class="dot" cx="460" cy="56" r="5"/>
+      </svg>
+      <figcaption>
+        <span class="key key-main"></span>Portfolio
+        <span class="key key-bench"></span>Benchmark
+        <span class="note">Illustrative data</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="figures" aria-label="Career figures">
+    <dl>
+      <div><dt>Years in finance</dt><dd>6</dd></div>
+      <div><dt>Models built</dt><dd>40+</dd></div>
+      <div><dt>Assets analysed</dt><dd>$850M</dd></div>
+      <div><dt>Certification</dt><dd>CFA Level II</dd></div>
+    </dl>
+  </section>
+
+  <section id="about" class="section two-col">
+    <h2>About</h2>
+    <div class="prose">
+      <p>I work with finance teams and founders to build clear, auditable models: three-statement forecasts, DCF valuations and scenario analysis that stand up to investor questions.</p>
+      <p>Before moving into analysis I spent two years in audit, which is why I document every assumption and reconcile every number. Outside work I write a monthly note on market structure and mentor early-career analysts.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="section two-col">
+    <h2>Experience</h2>
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Company</th><th scope="col">Years</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Senior Financial Analyst</td><td>Northbridge Capital</td><td>2023 to now</td></tr>
+          <tr><td>Financial Analyst</td><td>Harlow &amp; Finch</td><td>2020 to 2023</td></tr>
+          <tr><td>Audit Associate</td><td>Mercer Assurance</td><td>2018 to 2020</td></tr>
+        </tbody>
+      </table>
+      <p class="skills"><strong>Tools:</strong> Excel, Python, SQL, Power BI, Bloomberg Terminal</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Selected projects</h2>
+    <ul class="projects">
+      <li>
+        <div>
+          <h3>SaaS company valuation</h3>
+          <p>DCF and comparable-company model for a Series B software firm, with downside and upside cases.</p>
+        </div>
+        <p class="result"><strong>12% </strong>tighter valuation range</p>
+      </li>
+      <li>
+        <div>
+          <h3>Working capital forecast</h3>
+          <p>13-week cash flow tool that flags funding gaps before they happen.</p>
+        </div>
+        <p class="result"><strong>$2.1M </strong>cash released</p>
+      </li>
+      <li>
+        <div>
+          <h3>Portfolio risk dashboard</h3>
+          <p>Power BI report tracking volatility, drawdown and sector exposure across 30 holdings.</p>
+        </div>
+        <p class="result"><strong>3 hrs </strong>saved per week</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Open to analyst and advisory roles. Email is the fastest way to reach me.</p>
+    <p><a class="mail" href="mailto:you@example.com">you@example.com</a></p>
+    <p class="links"><a href="https://www.linkedin.com/">LinkedIn</a> <a href="https://github.com/">GitHub</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Your Name. Figures shown are illustrative.</p>
+</footer>
+
+</body>
+</html>
